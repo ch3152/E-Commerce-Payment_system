@@ -1,0 +1,70 @@
+[20250106 22:38:51:489][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 4604 (C:\Users\user\Desktop\demo\build\classes\java\main started by 최진혁 in C:\Users\user\Desktop\demo)
+[20250106 22:38:51:594][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20250106 22:38:52:217][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20250106 22:38:52:217][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20250106 22:38:58:515][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode
+[20250106 22:38:58:515][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20250106 22:39:00:119][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 1509 ms. Found 5 JPA repository interfaces.
+[20250106 22:39:00:203][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Multiple Spring Data modules found, entering strict repository configuration mode
+[20250106 22:39:00:237][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[20250106 22:39:00:340][INFO ][o.s.d.r.c.RepositoryConfigurationExtensionSupport] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.CartRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[20250106 22:39:00:342][INFO ][o.s.d.r.c.RepositoryConfigurationExtensionSupport] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[20250106 22:39:00:346][INFO ][o.s.d.r.c.RepositoryConfigurationExtensionSupport] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.TossPaymentInfoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[20250106 22:39:00:386][INFO ][o.s.d.r.c.RepositoryConfigurationExtensionSupport] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[20250106 22:39:00:386][INFO ][o.s.d.r.c.RepositoryConfigurationExtensionSupport] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.demo.repository.WebPaymentInfoRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+[20250106 22:39:00:403][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 102 ms. Found 0 Redis repository interfaces.
+[20250106 22:39:04:314][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20250106 22:39:04:425][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20250106 22:39:04:436][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20250106 22:39:04:436][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20250106 22:39:04:800][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20250106 22:39:04:800][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 12583 ms
+[20250106 22:39:05:701][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20250106 22:39:06:068][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20250106 22:39:06:230][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20250106 22:39:07:946][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20250106 22:39:08:132][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20250106 22:39:10:544][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7624b8a6
+[20250106 22:39:10:587][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20250106 22:39:11:406][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20250106 22:39:11:518][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@35a5d1d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@219b5f20)
+[20250106 22:39:11:518][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@588e9565) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ae1c8ee)
+[20250106 22:39:11:518][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4b82cc1a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@301be815)
+[20250106 22:39:11:518][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1c1276ce) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@8a06b1a)
+[20250106 22:39:11:534][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@559f9408) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3a2b95ee)
+[20250106 22:39:11:537][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35003063) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ef36562)
+[20250106 22:39:11:539][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@17e59960) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7107ea97)
+[20250106 22:39:11:543][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@45305ffc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@60cdfa4d)
+[20250106 22:39:11:546][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b5841ad) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@15c55b03)
+[20250106 22:39:19:503][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20250106 22:39:22:023][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20250106 22:39:25:308][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20250106 22:39:25:738][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20250106 22:39:28:509][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20250106 22:39:28:594][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20250106 22:39:29:783][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8083 (http) with context path '/'
+[20250106 22:39:30:003][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 45.035 seconds (process running for 54.043)
+[20250106 22:39:54:460][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20250106 22:39:54:561][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20250106 22:39:54:716][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 125 ms
+[20250106 22:40:01:280][WARN ][o.a.catalina.util.SessionIdGeneratorBase] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,007] milliseconds.
+[20250106 22:40:04:182][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0
+[20250106 22:40:15:571][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:15:902][INFO ][com.example.demo.service.UserService] 로그인 처리 시간 (DB 조회 후 Redis 저장): 5749 ms
+[20250106 22:40:17:538][INFO ][com.example.demo.service.UserService] Redis에서 캐시된 사용자 로그인 처리
+[20250106 22:40:17:542][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:17:734][INFO ][com.example.demo.service.UserService] Redis에서 캐시된 사용자 로그인 처리
+[20250106 22:40:17:745][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0
+[20250106 22:40:17:750][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:20:331][INFO ][com.example.demo.service.UserService] Redis에서 로그인 처리
+[20250106 22:40:20:333][INFO ][com.example.demo.service.UserService] 로그인 처리 시간 (Redis 사용): 4 ms
+[20250106 22:40:21:371][INFO ][com.example.demo.service.UserService] Redis에서 캐시된 사용자 로그인 처리
+[20250106 22:40:21:379][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:21:479][INFO ][com.example.demo.service.UserService] Redis에서 캐시된 사용자 로그인 처리
+[20250106 22:40:21:481][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0
+[20250106 22:40:21:485][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:24:067][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20250106 22:40:24:127][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20250106 22:40:24:161][DEBUG][org.hibernate.SQL] select c1_0.id,c1_0.created_at,c1_0.product_id,c1_0.quantity,c1_0.updated_at,c1_0.signup_id from cart c1_0 where c1_0.signup_id=?
+[20250106 22:40:24:317][DEBUG][org.hibernate.SQL] insert into cart (created_at,product_id,quantity,updated_at,signup_id) values (?,?,?,?,?)
+[20250106 22:40:26:801][WARN ][o.s.w.s.m.s.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'signupId' for method parameter type String is not present]

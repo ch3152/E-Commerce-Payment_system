@@ -1,0 +1,240 @@
+[20241216 21:55:00:338][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 9696 (C:\Users\user\Desktop\demo\build\classes\java\main started by √÷¡¯«ı in C:\Users\user\Desktop\demo)
+[20241216 21:55:00:378][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20241216 21:55:00:658][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20241216 21:55:00:662][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20241216 21:55:06:153][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20241216 21:55:06:495][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 206 ms. Found 5 JPA repository interfaces.
+[20241216 21:55:10:841][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20241216 21:55:10:883][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20241216 21:55:10:917][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20241216 21:55:10:918][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20241216 21:55:11:155][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20241216 21:55:11:158][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 10494 ms
+[20241216 21:55:11:625][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20241216 21:55:15:246][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20241216 21:55:15:476][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20241216 21:55:17:065][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20241216 21:55:19:513][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20241216 21:55:20:959][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@239dd946
+[20241216 21:55:20:967][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20241216 21:55:21:328][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20241216 21:55:21:443][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@471c3d35) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@71a774eb)
+[20241216 21:55:21:445][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1bc94584) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cb7d8af)
+[20241216 21:55:21:447][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6a64b199) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@202e9012)
+[20241216 21:55:21:451][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@711a14f6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@39ad8da)
+[20241216 21:55:21:457][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c3d4949) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18c7eedc)
+[20241216 21:55:21:459][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@395bf496) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cd2a76f)
+[20241216 21:55:21:464][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4a03ccbd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d957a2f)
+[20241216 21:55:21:466][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b8ccc4f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@721ceb8e)
+[20241216 21:55:21:468][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@262eb754) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@60ace5bc)
+[20241216 21:55:28:214][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20241216 21:55:31:908][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20241216 21:55:38:278][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20241216 21:55:41:083][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20241216 21:55:43:669][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20241216 21:55:43:792][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20241216 21:55:43:989][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8083 (http) with context path '/'
+[20241216 21:55:44:047][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 49.088 seconds (process running for 68.489)
+[20241216 21:58:15:163][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 16080 (C:\Users\user\Desktop\demo\build\classes\java\main started by √÷¡¯«ı in C:\Users\user\Desktop\demo)
+[20241216 21:58:15:169][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20241216 21:58:15:331][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20241216 21:58:15:347][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20241216 21:58:17:661][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20241216 21:58:17:863][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 192 ms. Found 5 JPA repository interfaces.
+[20241216 21:58:26:892][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20241216 21:58:26:934][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20241216 21:58:26:949][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20241216 21:58:26:951][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20241216 21:58:27:152][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20241216 21:58:27:154][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 11806 ms
+[20241216 21:58:27:745][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20241216 21:58:28:045][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20241216 21:58:28:201][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20241216 21:58:29:713][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20241216 21:58:29:818][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20241216 21:58:35:000][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35c93cbb
+[20241216 21:58:35:052][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20241216 21:58:35:485][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20241216 21:58:35:747][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@262eb754) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60ace5bc)
+[20241216 21:58:35:753][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@dafb352) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18fa79f2)
+[20241216 21:58:35:801][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4bbde9ae) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c3b6460)
+[20241216 21:58:35:848][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3cfe7b96) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7780b012)
+[20241216 21:58:35:879][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@53d4c7d5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@445bb1ab)
+[20241216 21:58:35:883][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@b36407d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@79c47129)
+[20241216 21:58:35:898][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@cdbfbab) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1514d572)
+[20241216 21:58:35:911][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c185a05) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@760f3b96)
+[20241216 21:58:35:917][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@255a805f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16d66ec3)
+[20241216 21:58:38:576][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20241216 21:58:38:878][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20241216 21:58:39:760][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20241216 21:58:39:828][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20241216 21:58:40:528][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20241216 21:58:40:551][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20241216 21:58:40:609][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8083 (http) with context path '/'
+[20241216 21:58:40:629][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 27.122 seconds (process running for 34.34)
+[20241216 22:00:03:835][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 4932 (C:\Users\user\Desktop\demo\build\classes\java\main started by √÷¡¯«ı in C:\Users\user\Desktop\demo)
+[20241216 22:00:03:848][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20241216 22:00:04:381][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20241216 22:00:04:383][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20241216 22:00:16:870][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20241216 22:00:17:147][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 244 ms. Found 5 JPA repository interfaces.
+[20241216 22:00:21:831][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20241216 22:00:21:907][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20241216 22:00:21:921][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20241216 22:00:21:921][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20241216 22:00:22:136][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20241216 22:00:22:136][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 17741 ms
+[20241216 22:00:22:937][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20241216 22:00:23:497][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20241216 22:00:24:010][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20241216 22:00:25:594][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20241216 22:00:27:406][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20241216 22:00:28:291][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e9b4733
+[20241216 22:00:28:298][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20241216 22:00:28:488][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20241216 22:00:28:576][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@445bb1ab) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@b36407d)
+[20241216 22:00:28:578][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@79c47129) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@cdbfbab)
+[20241216 22:00:28:581][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1514d572) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c185a05)
+[20241216 22:00:28:583][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@760f3b96) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@255a805f)
+[20241216 22:00:28:585][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16d66ec3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7870c66e)
+[20241216 22:00:28:587][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@772c817d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@605afbf)
+[20241216 22:00:28:592][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@238079ca) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5dbd8862)
+[20241216 22:00:28:594][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e89cdc1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65daebf8)
+[20241216 22:00:28:597][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@45b480a0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74fbeeec)
+[20241216 22:00:31:325][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20241216 22:00:31:636][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20241216 22:00:33:710][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20241216 22:00:33:759][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20241216 22:00:34:572][WARN ][o.s.b.d.a.OptionalLiveReloadServer] Unable to start LiveReload server
+[20241216 22:00:34:619][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20241216 22:00:34:658][WARN ][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[20241216 22:00:34:662][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+[20241216 22:00:34:701][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[20241216 22:00:34:735][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[20241216 22:00:35:005][INFO ][o.s.b.a.l.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[20241216 22:00:37:149][ERROR][o.s.b.d.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+[20241216 22:02:38:157][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 9420 (C:\Users\user\Desktop\demo\build\classes\java\main started by √÷¡¯«ı in C:\Users\user\Desktop\demo)
+[20241216 22:02:38:163][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20241216 22:02:38:330][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20241216 22:02:38:331][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20241216 22:02:40:441][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20241216 22:02:40:617][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 150 ms. Found 5 JPA repository interfaces.
+[20241216 22:02:43:073][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20241216 22:02:43:125][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20241216 22:02:43:135][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20241216 22:02:43:136][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20241216 22:02:43:361][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20241216 22:02:43:363][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 5030 ms
+[20241216 22:02:44:109][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20241216 22:02:44:350][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20241216 22:02:44:499][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20241216 22:02:45:458][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20241216 22:02:45:565][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20241216 22:02:46:573][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f10f3b0
+[20241216 22:02:46:590][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20241216 22:02:46:824][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20241216 22:02:46:931][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b5b4cda) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7e228b00)
+[20241216 22:02:46:934][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@504e86ae) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f108efa)
+[20241216 22:02:46:945][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1eac2c5e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@743cce00)
+[20241216 22:02:46:949][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@50e34ddf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4b1f6e67)
+[20241216 22:02:46:950][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@342e7586) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@26f0e1cd)
+[20241216 22:02:46:958][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cb7dd79) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5c6bfade)
+[20241216 22:02:46:964][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b2e3690) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3a7152b1)
+[20241216 22:02:46:967][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@687f1c93) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6bc1a648)
+[20241216 22:02:46:976][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b18716) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@31e5a94b)
+[20241216 22:02:49:830][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20241216 22:02:50:182][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20241216 22:02:51:514][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20241216 22:02:51:562][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20241216 22:02:52:528][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20241216 22:02:52:558][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20241216 22:02:52:620][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8083 (http) with context path '/'
+[20241216 22:02:52:641][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 20.243 seconds (process running for 23.206)
+[20241216 22:04:17:414][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20241216 22:04:17:422][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20241216 22:04:17:555][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 132 ms
+[20241216 22:04:19:116][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:04:19:116][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0
+[20241216 22:04:21:576][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:04:21:622][DEBUG][org.hibernate.SQL] select c1_0.id,c1_0.created_at,c1_0.product_id,c1_0.quantity,c1_0.updated_at,c1_0.signup_id from cart c1_0 where c1_0.signup_id=?
+[20241216 22:04:21:671][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:04:21:687][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:04:21:687][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:04:21:687][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:04:21:687][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:04:21:703][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:05:07:766][INFO ][c.e.demo.controller.WidgetController] Currency: KRW
+[20241216 22:05:07:769][INFO ][c.e.demo.controller.WidgetController] Method: ∞£∆Ì∞·¡¶
+[20241216 22:05:07:771][INFO ][c.e.demo.controller.WidgetController] mId: tgen_docs
+[20241216 22:05:07:771][INFO ][c.e.demo.controller.WidgetController] Country: KR
+[20241216 22:05:07:855][DEBUG][org.hibernate.SQL] insert into test_payment_info (country,currency,discount_amount,payment_method,payment_time,total_amount) values (?,?,?,?,?,?)
+[20241216 22:35:31:243][INFO ][com.example.demo.DemoApplication] Starting DemoApplication using Java 17.0.3 with PID 17052 (C:\Users\user\Desktop\demo\build\classes\java\main started by √÷¡¯«ı in C:\Users\user\Desktop\demo)
+[20241216 22:35:31:250][INFO ][com.example.demo.DemoApplication] No active profile set, falling back to 1 default profile: "default"
+[20241216 22:35:31:569][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[20241216 22:35:31:571][INFO ][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[20241216 22:35:35:025][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[20241216 22:35:35:349][INFO ][o.s.d.r.c.RepositoryConfigurationDelegate] Finished Spring Data repository scanning in 299 ms. Found 5 JPA repository interfaces.
+[20241216 22:35:42:385][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8083 (http)
+[20241216 22:35:42:424][INFO ][o.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8083"]
+[20241216 22:35:42:445][INFO ][o.apache.catalina.core.StandardService] Starting service [Tomcat]
+[20241216 22:35:42:447][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.31]
+[20241216 22:35:42:731][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[20241216 22:35:42:736][INFO ][o.s.b.w.s.c.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 11121 ms
+[20241216 22:35:43:844][INFO ][o.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [name: default]
+[20241216 22:35:44:297][INFO ][org.hibernate.Version] HHH000412: Hibernate ORM core version 6.5.3.Final
+[20241216 22:35:44:593][INFO ][o.h.c.internal.RegionFactoryInitiator] HHH000026: Second-level cache disabled
+[20241216 22:35:46:375][INFO ][o.s.o.j.p.SpringPersistenceUnitInfo] No LoadTimeWeaver setup: ignoring JPA class transformer
+[20241216 22:35:46:606][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[20241216 22:35:48:213][INFO ][com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b25ae5
+[20241216 22:35:48:225][INFO ][com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[20241216 22:35:48:610][WARN ][org.hibernate.orm.deprecation] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[20241216 22:35:51:436][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cb7d8af) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6a64b199)
+[20241216 22:35:51:501][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@202e9012) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@711a14f6)
+[20241216 22:35:51:507][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@39ad8da) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c3d4949)
+[20241216 22:35:51:525][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18c7eedc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@395bf496)
+[20241216 22:35:51:564][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6cd2a76f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4a03ccbd)
+[20241216 22:35:51:571][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d957a2f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@b8ccc4f)
+[20241216 22:35:51:575][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@721ceb8e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@262eb754)
+[20241216 22:35:51:650][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60ace5bc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@dafb352)
+[20241216 22:35:51:654][DEBUG][o.h.t.descriptor.sql.spi.DdlTypeRegistry] addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@18fa79f2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4bbde9ae)
+[20241216 22:35:56:070][INFO ][o.h.e.t.j.p.i.JtaPlatformInitiator] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[20241216 22:35:56:567][INFO ][o.s.o.j.LocalContainerEntityManagerFactoryBean] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[20241216 22:35:58:971][WARN ][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[20241216 22:35:59:109][INFO ][o.s.b.a.w.s.WelcomePageHandlerMapping] Adding welcome page template: index
+[20241216 22:36:00:998][INFO ][o.s.b.d.a.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[20241216 22:36:01:071][INFO ][o.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8083"]
+[20241216 22:36:01:196][INFO ][o.s.b.w.embedded.tomcat.TomcatWebServer] Tomcat started on port 8083 (http) with context path '/'
+[20241216 22:36:01:212][INFO ][com.example.demo.DemoApplication] Started DemoApplication in 35.997 seconds (process running for 38.372)
+[20241216 22:39:15:777][INFO ][o.a.c.c.C.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[20241216 22:39:15:886][INFO ][o.s.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[20241216 22:39:16:081][INFO ][o.s.web.servlet.DispatcherServlet] Completed initialization in 195 ms
+[20241216 22:39:18:477][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0
+[20241216 22:39:18:477][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:39:24:927][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:39:25:021][DEBUG][org.hibernate.SQL] select c1_0.id,c1_0.created_at,c1_0.product_id,c1_0.quantity,c1_0.updated_at,c1_0.signup_id from cart c1_0 where c1_0.signup_id=?
+[20241216 22:39:25:224][DEBUG][org.hibernate.SQL] select u1_0.id,u1_0.created_at,u1_0.name,u1_0.phone,u1_0.signup_id,u1_0.signup_password,u1_0.updated_at from user u1_0 where u1_0.signup_id=?
+[20241216 22:39:25:287][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:39:25:333][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:39:25:333][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:39:25:333][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:39:25:333][DEBUG][org.hibernate.SQL] select p1_0.id,p1_0.category,p1_0.country,p1_0.manufacturer,p1_0.name,p1_0.price,p1_0.quantity from product p1_0 where p1_0.id=?
+[20241216 22:42:56:926][INFO ][c.e.demo.controller.WidgetController] Currency: KRW
+[20241216 22:42:57:001][INFO ][c.e.demo.controller.WidgetController] Method: ∞£∆Ì∞·¡¶
+[20241216 22:42:57:007][INFO ][c.e.demo.controller.WidgetController] mId: tgen_docs
+[20241216 22:42:57:007][INFO ][c.e.demo.controller.WidgetController] Country: KR
+[20241216 22:43:02:237][DEBUG][org.hibernate.SQL] insert into test_payment_info (country,currency,discount_amount,payment_method,payment_time,total_amount) values (?,?,?,?,?,?)

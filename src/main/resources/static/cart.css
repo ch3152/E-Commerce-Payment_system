@@ -1,0 +1,99 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* 장바구니 아이템 리스트 */
+#cart-items {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 각 장바구니 아이템 스타일 */
+#cart-items-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#cart-items-list h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+#cart-items-list p {
+  font-size: 1em;
+  color: #555;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 총 가격 영역 */
+#total-price {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+/* 결제 버튼 */
+#checkout-button {
+  display: block;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#checkout-button:hover {
+  background-color: #218838;
+}
+
+/* 뒤로가기 버튼 */
+button[onclick="goBack()"] {
+  background-color: #dc3545;
+}
+
+button[onclick="goBack()"]:hover {
+  background-color: #c82333;
+}
