@@ -15,6 +15,6 @@ public class SignupService {
         if (userRepository.existsBySignupId(user.getSignupId())) {
             throw new Exception("이미 존재하는 아이디입니다.");
         }
-        userRepository.save(user);  // DB에 저장
+        userRepository.save(user); 
     }
 }

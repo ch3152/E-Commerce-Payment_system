@@ -16,7 +16,7 @@ public class CartCleanupService {
 
     private final CartRepository cartRepository;
     private final UserRepository userRepository;
-    private final ProductRepository productRepository; // ProductRepository 주입
+    private final ProductRepository productRepository; 
 
     @Autowired
     public CartCleanupService(CartRepository cartRepository, UserRepository userRepository, ProductRepository productRepository) {
@@ -41,7 +41,7 @@ public class CartCleanupService {
         for (Cart cartItem : cartItems) {
             Product product = cartItem.getProduct();
             int quantityToReduce = cartItem.getQuantity();
-            product.setQuantity(product.getQuantity() - quantityToReduce);  // 상품 수량 차감
+            product.setQuantity(product.getQuantity() - quantityToReduce); 
 
             // 상품 수량 업데이트
             productRepository.save(product);

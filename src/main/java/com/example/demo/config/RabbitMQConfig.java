@@ -16,14 +16,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQConfig {
 
-    public static final String QUEUE_NAME = "cart-queue";  // 큐 이름을 cart-queue로 수정
+    public static final String QUEUE_NAME = "cart-queue";  
     public static final String EXCHANGE_NAME = "cartExchange";
     public static final String ROUTING_KEY = "cart.#";
 
     // Queue 선언
     @Bean
     public Queue queue() {
-        return new Queue(QUEUE_NAME, true); // 영구적 큐 설정
+        return new Queue(QUEUE_NAME, true); 
     }
 
     // Exchange 설정
@@ -59,10 +59,10 @@ public class RabbitMQConfig {
     public SimpleMessageListenerContainer container(ConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
-        container.setQueueNames(QUEUE_NAME);  // 큐 이름을 cart-queue로 설정
+        container.setQueueNames(QUEUE_NAME); 
         container.setMessageListener(listenerAdapter);
-        container.setConcurrentConsumers(1);  // 동시 소비자 수 설정 (필요시 조정)
-        container.setMaxConcurrentConsumers(5);  // 최대 동시 소비자 수 (필요시 조정)
+        container.setConcurrentConsumers(1);  
+        container.setMaxConcurrentConsumers(5); 
         return container;
     }
 
@@ -78,8 +78,8 @@ public class RabbitMQConfig {
     @Bean
     public ObjectMapper objectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());  // 날짜/시간 관련 처리를 위한 모듈
-        objectMapper.registerModule(new ParameterNamesModule());  // 파라미터 이름 모듈
+        objectMapper.registerModule(new JavaTimeModule()); 
+        objectMapper.registerModule(new ParameterNamesModule());  
         return objectMapper;
     }
 }

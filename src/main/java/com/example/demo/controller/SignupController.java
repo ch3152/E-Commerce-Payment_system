@@ -19,7 +19,7 @@ public class SignupController {
     @GetMapping("/signup")
     public String showSignupForm(Model model) {
         model.addAttribute("user", new User());
-        return "signup";  // signup.html 페이지로 이동
+        return "signup"; 
     }
 
     // 회원가입 처리
@@ -32,16 +32,16 @@ public class SignupController {
         }
 
         if (result.hasErrors()) {
-            return "signup";  // 에러가 있으면 다시 폼을 띄웁니다.
+            return "signup";  
         }
 
         try {
             userService.registerUser(user);  // 회원가입 서비스 호출
             model.addAttribute("message", "회원가입 성공!");
-            return "index";  // 회원가입 성공 후 인덱스 페이지로 이동
+            return "index";
         } catch (Exception e) {
             model.addAttribute("message", "회원가입 실패: " + e.getMessage());
-            return "signup";  // 실패하면 다시 회원가입 페이지로 돌아갑니다.
+            return "signup"; 
         }
     }
 }

@@ -1,10 +1,10 @@
 package com.example.demo.dto;
 
 public class MessageQueueCartDTO {
-    private String userId;        // 사용자 ID
-    private Long productId;       // 상품 ID
-    private int quantity;         // 변경된 수량
-    private String actionType;    // 작업 유형 (ADD, UPDATE, DELETE)
+    private String userId;       
+    private Long productId;      
+    private int quantity;         
+    private String actionType;    
 
     // 기본 생성자
     public MessageQueueCartDTO() {}

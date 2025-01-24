@@ -14,7 +14,7 @@ public class CartItemDTO {
     // 기본 생성자 (Jackson 역직렬화용)
     public CartItemDTO() {}
 
-    // 전체 필드를 초기화하는 생성자
+
     @JsonCreator
     public CartItemDTO(
             @JsonProperty("productName") String productName,

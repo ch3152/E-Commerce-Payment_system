@@ -80,10 +80,10 @@ public class RedisToQueueService {
 
         } catch (IllegalArgumentException e) {
             logger.error("검증 실패: {}", e.getMessage());
-            throw e;  // 트랜잭션 롤백을 위해 예외를 던집니다.
+            throw e; 
         } catch (Exception e) {
             logger.error("장바구니 항목 처리 중 오류 발생: {}", e.getMessage(), e);
-            throw new RuntimeException("장바구니 항목 처리 중 오류 발생", e);  // 트랜잭션 롤백을 위해 예외를 던집니다.
+            throw new RuntimeException("장바구니 항목 처리 중 오류 발생", e); 
         }
 
         logger.info("사용자 ID: {} 및 상품 ID: {}에 대해 장바구니 항목 처리 완료", cartItemDTO.getUserId(), cartItemDTO.getProductId());

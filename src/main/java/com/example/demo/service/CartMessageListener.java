@@ -15,7 +15,7 @@ public class CartMessageListener {
     private final ObjectMapper objectMapper = new ObjectMapper();
     private static final Logger logger = LoggerFactory.getLogger(CartMessageListener.class);
 
-    @RabbitListener(queues = "cart-queue") // 큐 이름을 cart-queue로 수신
+    @RabbitListener(queues = "cart-queue") 
     public void onMessage(String message) {
         logger.info("[onMessage] RabbitMQ에서 메시지 수신: {}", message);
 

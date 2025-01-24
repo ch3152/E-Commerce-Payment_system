@@ -42,14 +42,14 @@ public class Cart {
     // 기본 생성자
     public Cart() {}
 
-    // 모든 필드를 포함한 생성자
+   
     public Cart(User user, Product product, int quantity) {
         this.user = user;
         this.product = product;
         this.quantity = quantity;
     }
 
-    // Getter와 Setter
+
     public Long getId() {
         return id;
     }
@@ -101,7 +101,7 @@ public class Cart {
     // 상품 수량을 줄이는 메서드
     public void reduceProductQuantity() {
         if (product != null && product.getQuantity() >= this.quantity) {
-            product.setQuantity(product.getQuantity() - this.quantity);  // 상품 수량 차감
+            product.setQuantity(product.getQuantity() - this.quantity);  
         } else {
             throw new IllegalStateException("상품의 재고가 부족합니다.");
         }

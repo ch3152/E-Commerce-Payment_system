@@ -9,7 +9,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Integer price; // int -> Integer로 변경
+    private Integer price; 
     private String category;
     private String country;
     private String manufacturer;

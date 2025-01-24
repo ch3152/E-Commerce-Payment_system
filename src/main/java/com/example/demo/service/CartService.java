@@ -53,7 +53,7 @@ public class CartService {
         // Redis에 장바구니 정보 저장
         saveCartToRedis(signupId);
 
-        // RabbitMQ로 카트 변경사항 전송
+
         sendCartUpdateMessageToQueue(signupId);
 
         return "상품이 장바구니에 추가되었습니다.";
@@ -145,7 +145,7 @@ public class CartService {
     // RabbitMQ로 카트 업데이트 메시지 전송
     private void sendCartUpdateMessageToQueue(String signupId) {
         String message = "Cart updated for user: " + signupId;
-        // 중복 메시지를 방지하는 처리 (예: 메시지 고유 ID 생성)
+       
         String messageId = generateMessageId(signupId);
         if (!isMessageAlreadyInQueue(messageId)) {
             rabbitTemplate.convertAndSend("cartExchange", "cart.update", message);
@@ -158,15 +158,12 @@ public class CartService {
         return "cart-" + signupId + "-" + System.currentTimeMillis();
     }
 
-    // 이미 큐에 메시지가 있는지 확인
-    private boolean isMessageAlreadyInQueue(String messageId) {
-        // 메시지 큐에서 중복 메시지가 있는지 확인하는 로직을 추가합니다.
-        return false; // 실제로 큐와 연동하여 중복 체크 로직을 구현해야 합니다.
+    private boolean isMessageAlreadyInQueue(String messageId) {    
+        return false;
     }
 
-    // 메시지 전송 로그
+
     private void logMessageSent(String messageId) {
-        // 로그로 메시지 전송 여부를 기록합니다.
         System.out.println("Message sent with ID: " + messageId);
     }
 }

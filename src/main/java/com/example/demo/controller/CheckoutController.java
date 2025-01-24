@@ -18,7 +18,7 @@ public class CheckoutController {
     // 결제 페이지로 이동
     @GetMapping("/checkout")
     public String checkoutPage() {
-        return "checkout";  // checkout.html로 이동
+        return "checkout";  
     }
 
     // 클라이언트에서 결제 정보 받기 (totalPrice, totalQuantity)

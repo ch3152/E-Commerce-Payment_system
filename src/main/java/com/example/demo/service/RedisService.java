@@ -46,7 +46,7 @@ public class RedisService {
             }
             if (updated) {
                 saveCartItemsToRedis(signupId, cartItems);
-                sendCartDataToQueue(cartItems);  // Redis에 저장 후 큐로 전송
+                sendCartDataToQueue(cartItems); 
             }
         }
     }

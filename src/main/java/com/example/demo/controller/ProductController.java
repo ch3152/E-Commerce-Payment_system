@@ -16,6 +16,6 @@ public class ProductController {
 
     @GetMapping("/products")
     public List<Product> getProducts() {
-        return productRepository.findAll();  // 모든 상품 목록을 반환
+        return productRepository.findAll(); 
     }
 }

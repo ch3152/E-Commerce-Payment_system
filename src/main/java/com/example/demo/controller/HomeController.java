@@ -8,7 +8,7 @@ public class HomeController {
 
     @GetMapping("/index.html")
     public String home() {
-        return "index"; // resources/static/index.html 반환
+        return "index"; 
     }
 
 }

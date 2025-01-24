@@ -23,7 +23,7 @@ public class UserController {
     public ResponseEntity<String> login(@RequestBody User user, HttpSession session) {
         boolean isAuthenticated = userService.authenticateUser(user.getSignupId(), user.getSignupPassword());
         if (isAuthenticated) {
-            session.setAttribute("signupId", user.getSignupId()); // 로그인 성공 시 세션에 signupId 저장
+            session.setAttribute("signupId", user.getSignupId()); 
             return ResponseEntity.ok("로그인 성공");
         }
         return ResponseEntity.status(401).body("아이디 또는 비밀번호가 일치하지 않습니다.");
@@ -46,9 +46,9 @@ public class UserController {
         if (signupId != null) {
             User user = userService.getUserBySignupId(signupId);
             if (user != null) {
-                return ResponseEntity.ok(user.getName()); // 사용자 이름 반환
+                return ResponseEntity.ok(user.getName());
             }
         }
-        return ResponseEntity.ok("");  // 로그인된 사용자 없을 때 빈 문자열 반환
+        return ResponseEntity.ok(""); 
     }
 }

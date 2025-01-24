@@ -16,7 +16,7 @@ public class WebPaymentInfo {
     private User user;
 
     private int totalPrice;
-    private long totalQuantity; // long 타입으로 변경
+    private long totalQuantity;
     private String customerName;
     private String customerPhone;
     private String paymentStatus;
@@ -32,8 +32,8 @@ public class WebPaymentInfo {
         this.user = user;
         this.totalPrice = totalPrice;
         this.totalQuantity = totalQuantity;
-        this.customerName = customerName;   // 고정된 customerName
-        this.customerPhone = customerPhone; // 고정된 customerPhone
+        this.customerName = customerName;   
+        this.customerPhone = customerPhone; 
         this.paymentStatus = paymentStatus;
     }
 

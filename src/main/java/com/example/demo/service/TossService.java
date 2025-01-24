@@ -46,10 +46,10 @@ public class TossService {
             paymentInfo.setTotalAmount(totalAmount);
             
             // 할인 정보는 null 체크 후 처리
-            paymentInfo.setDiscount(discount != null ? discount : "{}"); // JSON 형식으로 기본값 설정
+            paymentInfo.setDiscount(discount != null ? discount : "{}"); 
             paymentInfo.setPaymentTime(paymentTime);
-            paymentInfo.setCustomerName(user.getName());  // 사용자 이름 설정
-            paymentInfo.setCustomerPhone(user.getPhone());  // 사용자 전화번호 설정
+            paymentInfo.setCustomerName(user.getName()); 
+            paymentInfo.setCustomerPhone(user.getPhone());  
 
             // DB에 결제 정보 저장
             paymentRepository.save(paymentInfo);

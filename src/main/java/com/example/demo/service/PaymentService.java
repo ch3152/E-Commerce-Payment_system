@@ -23,12 +23,12 @@ public class PaymentService {
         
         // WebPaymentInfo 객체 생성
         WebPaymentInfo paymentInfo = new WebPaymentInfo(
-            user,               // user
-            totalPrice,         // totalPrice
-            totalQuantity,      // totalQuantity
-            user.getName(),     // customerName (사용자 이름)
-            user.getPhone(),    // customerPhone (사용자 전화번호)
-            paymentStatus       // paymentStatus
+            user,             
+            totalPrice,         
+            totalQuantity,    
+            user.getName(),    
+            user.getPhone(),  
+            paymentStatus      
         );             
         // DB에 결제 정보 저장
         paymentRepository.save(paymentInfo);
