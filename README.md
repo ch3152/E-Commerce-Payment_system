@@ -36,9 +36,10 @@ https://dbdiagram.io/d
      
           예시 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@22
   2 상품 테이블
+  웹 사이트에 있는 모든 상품 정보들을 담고있는 테이블 입니다.
 
-    - **prodcut_id**: 유저 번호 (BIGNINT UNSIGNED, 기본 키)
-        - 상품 번호도`INT`를 사용할 수 있지만,수많은 상품 등록을 예상해 `BIGINT`를 사용함,@GeneratedValue(strategy = GenerationType.IDENTITY)설정으로 가입순서대로 번호 매기게 함
+    - **prodcut_id**: 상품 번호 (BIGNINT UNSIGNED, 기본 키)
+        - 상품 번호도`INT`를 사용할 수 있지만,수많은 상품 등록을 예상해 `BIGINT`를 사용함,@GeneratedValue(strategy = GenerationType.IDENTITY)설정으로 상품 등록 순서대로 번호 매기게함.
     - **name**: 상품 이름 (VARCHAR(255), NOT NULL)
     - **price**: 상품 가격(INT, NOT NULL)
     - **category**: 상품 종류 (VARCHAR(255), NOT NULL)
@@ -49,14 +50,23 @@ https://dbdiagram.io/d
 
 
   3 장바구니 테이블
-  Table: cart
-Columns:
-id bigint AI PK 
-signup_id varchar(255) 
-product_id bigint 
-quantity int 
-created_at timestamp 
-updated_at timestamp
+  유저들의 장바구니 데이터를 담고 있는 테이블입니다
+  
+
+
+   - **cart_id**: 유저 번호 (BIGNINT UNSIGNED, 기본 키)
+        - 수많은 장바구니 데이터 등록을 예상해 `BIGINT`를 사용함,@GeneratedValue(strategy = GenerationType.IDENTITY)설정으로 장바구니 생성 순서대로 번호 매기게함.
+   - **prodcut_id**: 상품 이름 (BIGNINT UNSIGNED, 유니크 키)
+        - 상품 테이블의 상품 ID를 참조하는 외래 키로, 장바구니에 상품이 추가되면 해당 상품의 번호가 저장됨 이후 상품 번호를 활용하여 상품 테이블에서 가격 및 재고 수량을 조회하여 표시함.
+   - **user_id**: 상품 이름 (BIGNINT UNSIGNED, 유니크 키)
+        - 유저 테이블의 ID를 참조하는 외래 키로, 장바구니가 특정 사용자에게 속하도록 설정됨 로그인한 사용자의 user_id를 기반으로 장바구니 목록을 조회하여 해당 사용자의 장바구니 정보를 가져올 수 있음.
+   - **signup_id**: 유저 아이디 (VARCHAR(15), NOT NULL)
+   - **quantity**: 재고 수량 (INT, NOT NULL)
+       - 사용자가 장바구니에 추가한 상품의 개수를 저장하는 필드 동일한 상품을 여러 개 담을 경우, 해당 상품의 quantity 값이 증가함 또한 추가하기전 상품 id를 통해 재고가 남아있는지 확인
+   - **created_at**: 생성 날짜 (TIMESTAMP, NOT NULL)
+   - **updated_at**: 업데이트 날짜 (datetime(6), NOT NULL)
+       - 장바구니 추가/삭제/변경하면 최근에 언제 바꿨는지 시간 데이터 저장
+   
   
 
   4 사이트 결제기록 테이블
@@ -70,6 +80,26 @@ customer_name varchar(255)
 customer_phone varchar(255) 
 payment_status varchar(255) 
 created_at timestamp
+   - **web_payment_id**:결제 번호 (BIGNINT UNSIGNED, 기본 키)
+        - 수많은 장바구니 데이터 등록을 예상해 `BIGINT`를 사용함,@GeneratedValue(strategy = GenerationType.IDENTITY)설정으로 결제 순서대로 번호 매기게함.
+   - **user_id**: 상품 이름 (BIGNINT UNSIGNED, 유니크 키)
+        - 유저 테이블의 ID를 참조하는 외래 키로, 장바구니가 특정 사용자에게 속하도록 설정됨 로그인한 사용자의 user_id를 기반으로 장바구니 목록을 조회하여 해당 사용자의 장바구니 정보를 가져올 수 있음.
+   - **signup_id**: 유저 아이디 (VARCHAR(15), NOT NULL)
+   - **total_quantity**: 총 수량 (INT, NOT NULL)
+       - 결제하려고 하는 상품들의 총 수량을 나타냄
+   - **total_price**: 상품 이름 (INT, NOT NULL)
+       - 결제하려고 하는 상품들의 수량과 가격들을 곱해서 총 가격을 나타냄
+   - **customer_name  **: 유저 아이디 (VARCHAR(255), NOT NULL)
+       - 유저 정보 바탕으로 결제하는 손님 이름 저장 
+   - **customer_phone **: 유저 아이디 (VARCHAR(255), NOT NULL)
+   - **payment_status**: 총 수량 (VARCHAR(255), NOT NULL)
+       - 사용자가 장바구니에 추가한 상품의 개수를 저장하는 필드 동일한 상품을 여러 개 담을 경우, 해당 상품의 quantity 값이 증가함 또한 추가하기전 상품 id를 통해 재고가 남아있는지 확인
+    
+    
+   - 
+   - **created_at**: 생성 날짜 (TIMESTAMP, NOT NULL)
+   - **updated_at**: 업데이트 날짜 (datetime(6), NOT NULL)
+       - 장바구니 추가/삭제/변경하면 최근에 언제 바꿨는지 시간 데이터 저장
 
 
   5 토스페이 결제 테이블
