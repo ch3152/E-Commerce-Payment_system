@@ -170,6 +170,29 @@ Toss API로부터 결제 상태(success/fail) 수신.
 "토스 API 결제 프로세스 흐름"
 ![image](https://github.com/user-attachments/assets/bdaa700f-277b-40dc-b4dd-0623d85faba2)
 
+##리팩토링
+
+*이전 코드
+public boolean authenticateUser(String signupId, String password) {
+    String cachedSignupId = redisTemplate.opsForValue().get("login:signupId:" + signupId);
+    if (cachedSignupId != null) {
+        // Redis에서 로그인 처리
+    } else {
+        User user = userRepository.findBySignupId(signupId).orElse(null);
+        // DB에서 사용자 조회
+    }
+}
+*현재 코드 
+public boolean authenticateUser(String signupId, String password) {
+    User user = getUserBySignupId(signupId);
+    // getUserBySignupId 내부에서 Redis 조회 후 없으면 DB 조회
+}
+중복 메소드가 발견되어 코드 간소화로 똑같은 redis조회 메소드인 // 사용자 아이디로 사용자 조회 (캐시 우선 조회)
+    public User getUserBySignupId(String signupId) {
+        String cachedSignupId = redisTemplate.opsForValue().get("login:signupId:" +  signupId); 가 있어 User user = getUserBySignupId(signupId);로 대체하였다
+        
+##트러블슈팅 경험
+처음에 비밀번호 암호화 알고리즘인 BCrypt을 사용하려고 org.springframework.boot:spring-boot-starter-security 의존성을 추가했는데, 실행은 되지만 내가 구현한 창 대신 예상치 못한 웹사이트가 뜨는 문제가 발생했다. 찾아보니 spring-boot-starter-security 의존성은 Spring Security의 전체 보안 기능을 포함하는 스타터라 비밀번호 암호화만 사용하려면 spring-security-crypto 의존성을 추가해야 한다는 것을 알게 되었다.
 
 GitHub 포트폴리오 만들기 (1)
 (만들기 전 흐름 이해)
