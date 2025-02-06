@@ -1,7 +1,7 @@
 # **E-Commerce-Payment_system (Spring Boot & 토스페이 연동)**
 스프링 부트를 사용해 오픈소스인 토스 결제 api랑 결합해 e-커머스 시스템을 한번 구현 해봤습니다 . 인기 웹사이트라는 가정하에 대규모 트래픽을 처리할 수 있도록 Redis 캐싱과 메시지 큐(RabbitMQ)를 활용하여 서버 부하를 최소화하며 오픈 API 연동을 통해 원하는 방식으로 서버 간 통신을 설계하며 확장성과 유연성을 고려한 구조를 직접 구현해 보았습니다.
 ## 제작 기간
-2023 10월~2024 1월
+2024 10월~2025 1월
 
 ## 테이블 구성
 <details>
@@ -29,7 +29,7 @@
     - **updated_at**: 업데이트 날짜 (datetime(6), NOT NULL)
         - 회원가입 정보 수정하면 최근에 언제 바꿨는지 시간 데이터 저장
      
-          예시 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@22
+     
   2 상품 테이블
   ![image](https://github.com/user-attachments/assets/a59509bb-d20f-4087-8267-672465a6b450)
 
@@ -189,17 +189,17 @@ Toss API로부터 결제 상태(success/fail) 수신.
         // getUserBySignupId 내부에서 Redis 조회 후 없으면 DB 조회
    
 
-중복 메소드가 발견되어 코드 간소화로 똑같은 redis조회 메소드인 User user = getUserBySignupId(signupId);로 대체하였다
+중복 메소드가 발견되어 코드 간소화로 똑같은 redis조회 메소드인 **User user = getUserBySignupId(signupId);** 로 대체하였다
 
 ## 트러블슈팅 경험
 
 1 BCrypt 의존성 문제
 
-처음에 비밀번호 암호화 알고리즘인 BCrypt을 사용하려고 org.springframework.boot:spring-boot-starter-security 의존성을 추가했는데, 실행은 되지만 내가 구현한 창 대신 예상치 못한 웹사이트가 뜨는 문제가 발생했다. 찾아보니 spring-boot-starter-security 의존성은 Spring Security의 전체 보안 기능을 포함하는 스타터라 비밀번호 암호화만 사용하려면 spring-security-crypto 의존성을 추가해야 한다는 것을 알게 되었다.
+처음에 비밀번호 암호화 알고리즘인**BCrypt**을 사용하려고 **org.springframework.boot:spring-boot-starter-security** 의존성을 추가했는데, 실행은 되지만 내가 구현한 창 대신 예상치 못한 웹사이트가 뜨는 문제가 발생했다. 찾아보니 **spring-boot-starter-security** 의존성은 Spring Security의 전체 보안 기능을 포함하는 스타터라 비밀번호 암호화만 사용하려면 **spring-security-crypto** 의존성을 추가해야 한다는 것을 알게 되었다.
 
 2 Redis 직렬화 문제
 
-Redis에 데이터를 저장할 때, RedisTemplate<String, String>을 사용하여 데이터를 변환하면서 직렬화와 역직렬화 문제가 발생했다. 직렬화 방식에 대한 이해가 부족해 처음에는 데이터가 제대로 저장되지 않거나,다른 곳 서로 간 통신에서 문제가 발생하기해 한참을 헤맨 뒤  **Jackson2JsonRedisSerializer**를 사용해 직렬화 방식을 JSON으로 지정했더니 그 이후로 통신이 원할히 이루워졌다.
+Redis에 데이터를 저장할 때, **RedisTemplate<String, String>**을 사용하여 데이터를 변환하면서 직렬화와 역직렬화 문제가 발생했다. 직렬화 방식에 대한 이해가 부족해 처음에는 데이터가 제대로 저장되지 않거나,다른 곳 서로 간 통신에서 문제가 발생하기해 한참을 헤맨 뒤  **Jackson2JsonRedisSerializer**를 사용해 직렬화 방식을 JSON으로 지정했더니 그 이후로 통신이 원할히 이루워졌다.
 
 ## 회고록
 첫 개인 프로젝트를 만들면서 자바스프링, redis, 메세지큐, 오픈api 등 처음 써봤는데 생각보다 어려웠습니다, 특히 자바스프링의 의존성 개념이 처음에 뭔지 몰라 실행이 중간에 꺼져버려 장시간 동안 헤맨 기억이 있었고 프로젝트라는게 생각보다 원하는대로 되는게 아니라 수정하고 또 수정하느라 예상 완료 시간이 많이 지체되면서 처음 설계한 것 보다 완벽하게 구현을 못한게 아쉽습니다. 다음 프로젝트에는 유저의 검색 기록 및 쿠키 데이터를 분석하여 개인화된 상품을 추천하는 알고리즘을 구현하고 싶습니다.
