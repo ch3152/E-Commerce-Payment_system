@@ -170,6 +170,41 @@ Toss API로부터 결제 상태(success/fail) 수신.
 "토스 API 결제 프로세스 흐름"
 ![image](https://github.com/user-attachments/assets/bdaa700f-277b-40dc-b4dd-0623d85faba2)
 
+## 리팩토링
+
+#### *이전 코드
+    public boolean authenticateUser(String signupId, String password) {
+        String cachedSignupId = redisTemplate.opsForValue().get("login:signupId:" + signupId);
+        if (cachedSignupId != null) {
+            // Redis에서 로그인 처리
+       } else {
+           User user = userRepository.findBySignupId(signupId).orElse(null);
+           // DB에서 사용자 조회
+       }
+      }
+#### *현재 코드 
+
+    public boolean authenticateUser(String signupId, String password) {
+        User user = getUserBySignupId(signupId);}
+        // getUserBySignupId 내부에서 Redis 조회 후 없으면 DB 조회
+   
+
+중복 메소드가 발견되어 코드 간소화로 똑같은 redis조회 메소드인 User user = getUserBySignupId(signupId);로 대체하였다
+
+## 트러블슈팅 경험
+
+1 BCrypt 의존성 문제
+
+처음에 비밀번호 암호화 알고리즘인 BCrypt을 사용하려고 org.springframework.boot:spring-boot-starter-security 의존성을 추가했는데, 실행은 되지만 내가 구현한 창 대신 예상치 못한 웹사이트가 뜨는 문제가 발생했다. 찾아보니 spring-boot-starter-security 의존성은 Spring Security의 전체 보안 기능을 포함하는 스타터라 비밀번호 암호화만 사용하려면 spring-security-crypto 의존성을 추가해야 한다는 것을 알게 되었다.
+
+2 Redis 직렬화 문제
+
+Redis에 데이터를 저장할 때, RedisTemplate<String, String>을 사용하여 데이터를 변환하면서 직렬화와 역직렬화 문제가 발생했다. 직렬화 방식에 대한 이해가 부족해 처음에는 데이터가 제대로 저장되지 않거나,다른 곳 서로 간 통신에서 문제가 발생하기해 한참을 헤맨 뒤  **Jackson2JsonRedisSerializer**를 사용해 직렬화 방식을 JSON으로 지정했더니 그 이후로 통신이 원할히 이루워졌다.
+
+## 회고록
+
+이프로
+
 
 GitHub 포트폴리오 만들기 (1)
 (만들기 전 흐름 이해)
