@@ -3,6 +3,12 @@
 ## 제작 기간
 2024 10월~2025 1월
 
+## 전체적인 아키텍처
+<img src="https://github.com/user-attachments/assets/d97f883d-6f19-4740-b92d-00c25c370015" width="600" />
+
+
+
+
 ## 테이블 구성
 <details>
   <summary>테이블 구성 정보(ERD 설계도 및 테이블 간 관계/컬럼 설명)</summary>
@@ -124,7 +130,7 @@
 
 
 ##  개발 스택  
-`Java 17` `Spring Boot` `MySQL` `Redis` `RabbitMQ` `HTML` `JavaScript`
+`Java 17` `Spring Boot` `MySQL` `Redis` `RabbitMQ` `HTML` `JavaScript` `GCP`
 
 ## 핵심 기능
 ### 1 회원가입 & 로그인
