@@ -4,7 +4,7 @@
 2024 10월~2025 1월
 
 ## 전체적인 아키텍처
-<img src="https://github.com/user-attachments/assets/d97f883d-6f19-4740-b92d-00c25c370015" width="600" />
+<img src="https://github.com/user-attachments/assets/1840ed79-e880-4788-b883-eeeafedcec43" width="600" />
 
 
 
